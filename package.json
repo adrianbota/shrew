@@ -1,0 +1,33 @@
+{
+  "name": "shrew-css",
+  "version": "0.0.1",
+  "description": "Small footprint CSS base styling",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianbota/shrew-css.git"
+  },
+  "keywords": [
+    "shrew",
+    "css"
+  ],
+  "author": "Adrian Bota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianbota/shrew-css/issues"
+  },
+  "homepage": "https://github.com/adrianbota/shrew-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

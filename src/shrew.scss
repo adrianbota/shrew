@@ -1,16 +1,5 @@
 @import "variables";
 @import "functions";
+@import "base";
 @import "button";
-
-html {
-}
-
-hr,
-iframe,
-fieldset {
-  border: 1px solid #ccc;
-}
-
-hr {
-  border-top: 0;
-}
+@import "form";

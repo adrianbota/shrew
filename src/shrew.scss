@@ -1,5 +1,16 @@
-$color: blue;
+@import "variables";
+@import "functions";
+@import "button";
 
-body {
-  background-color: $color;
+html {
+}
+
+hr,
+iframe,
+fieldset {
+  border: 1px solid #ccc;
+}
+
+hr {
+  border-top: 0;
 }

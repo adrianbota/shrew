@@ -1,0 +1,7 @@
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($value) {
+  @return (stripUnit($value) / 16) * 1rem;
+}

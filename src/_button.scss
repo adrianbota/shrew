@@ -1,0 +1,62 @@
+// common styles
+.btn,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  border: 0;
+  border-radius: rem(3px);
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(14px);
+  font-weight: bold;
+  height: rem(36px);
+  line-height: rem(36px);
+  outline: 0;
+  padding: 0 rem(16px);
+  text-align: center;
+  text-decoration: none;
+  transition: all 100ms ease-out;
+  transition-property: background-color, color, transform;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:active {
+    transform: translateY(rem(1px));
+  }
+}
+
+// all but submit buttons
+.btn,
+button:not([type=submit]),
+input[type=button],
+input[type=reset] {
+  $bg-color: #9e9e9e;
+  background: rgba($bg-color, 0.2);
+  color: #000;
+
+  &:active {
+    background-color: rgba($bg-color, 0.4);
+  }
+}
+
+// submit buttons
+.btn-main,
+button[type=submit],
+input[type=submit] {
+  background: #3f51b5;
+  color: #fff;
+}
+
+// disabled state
+.btn.disabled,
+.btn-main.disabled,
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled,
+input[type=reset]:disabled {
+  background-color: rgba(#000, 0.12);
+  color: rgba(#000, 0.26);
+  cursor: default;
+}

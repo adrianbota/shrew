@@ -1,0 +1,16 @@
+a {
+  color: #673AB7;
+  outline: rem(2px) solid transparent;
+  outline-offset: rem(1px);
+  text-decoration: underline;
+  transition: all 100ms ease-out;
+  transition-property: outline, color;
+
+  &:focus:not(:active) {
+    outline-color: #8C9EFF;
+  }
+
+  &:visited {
+    color: #00BCD4;
+  }
+}

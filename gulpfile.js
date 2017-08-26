@@ -31,7 +31,12 @@ gulp.task('html', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['clean', 'css', 'html']);
+gulp.task('img', function () {
+  return gulp.src('src/*.jpg')
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('build', ['clean', 'css', 'html', 'img']);
 
 gulp.task('dev', ['build'], function () {
   browserSync.init({ server: 'dist' });

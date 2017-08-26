@@ -1,0 +1,15 @@
+ul, ol, dl {
+  margin: 0 0 rem($default-spacing);
+}
+
+ul, ol {
+  padding-left: rem(2 * $default-spacing);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}

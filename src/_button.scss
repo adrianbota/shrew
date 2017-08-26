@@ -1,4 +1,3 @@
-// common styles
 .btn,
 button,
 input[type=button],
@@ -8,7 +7,7 @@ input[type=reset] {
   border-radius: rem(3px);
   cursor: pointer;
   display: inline-block;
-  font-family: inherit;
+  font-family: $sans-font;
   font-size: inherit;
   font-weight: bold;
   height: rem(36px);
@@ -16,18 +15,17 @@ input[type=reset] {
   padding: 0 rem(16px);
   text-align: center;
   text-decoration: none;
-  transition: all 100ms ease-out;
-  transition-property: background-color, box-shadow, color, transform;
   white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  @include transition(background-color, box-shadow, color, transform);
+  @include smooth-font();
 
   &:focus {
     outline: 0;
   }
 
   &:focus:not(:active) {
-    box-shadow: inset 0 0 0 rem(2px) #8C9EFF;
+    @include shadow-inner-border(rem(2px), $indigo-a100);
   }
 
   &:active {
@@ -40,31 +38,30 @@ input[type=reset] {
 button:not([type=submit]),
 input[type=button],
 input[type=reset] {
-  $bg-color: #9e9e9e;
-  background: rgba($bg-color, 0.2);
-  color: #000;
+  background-color: $blue-grey-50;
+  color: $blue-grey-900;
 
   &:active {
-    background-color: rgba($bg-color, 0.4);
+    background-color: $blue-grey-100;
   }
 }
 
 // submit buttons
-.btn-main,
+.btn-primary,
 button[type=submit],
 input[type=submit] {
-  background: #673AB7;
-  color: #fff;
+  background: $deep-purple;
+  color: $white;
 }
 
 // disabled state
 .btn.disabled,
-.btn-main.disabled,
+.btn-primary.disabled,
 button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled,
 input[type=reset]:disabled {
-  background-color: rgba(#000, 0.12);
-  color: rgba(#000, 0.26);
+  background-color: $blue-grey-50;
+  color: $blue-grey-200;
   cursor: not-allowed;
 }

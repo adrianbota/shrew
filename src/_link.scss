@@ -1,16 +1,16 @@
 a {
-  color: #673AB7;
+  color: $light-blue-800;
   outline: rem(2px) solid transparent;
   outline-offset: rem(1px);
   text-decoration: underline;
-  transition: all 100ms ease-out;
-  transition-property: outline, color;
+
+  @include transition(outline, color);
 
   &:focus:not(:active) {
-    outline-color: #8C9EFF;
+    outline-color: $indigo-a100;
   }
 
   &:visited {
-    color: #00BCD4;
+    color: $blue-grey-700;
   }
 }

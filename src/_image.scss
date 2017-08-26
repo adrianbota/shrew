@@ -1,0 +1,15 @@
+figure {
+  @include card();
+
+  margin: 0 0 rem($default-spacing);
+  overflow: hidden;
+
+  img {
+    display: block;
+    min-width: 100%;
+  }
+}
+
+figcaption {
+  padding: rem(12px);
+}

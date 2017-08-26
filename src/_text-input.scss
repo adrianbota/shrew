@@ -1,0 +1,57 @@
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=datetime],
+input[type=datetime-local],
+input:not([type]),
+textarea,
+select {
+  appearance: none;
+  background-color: $white;
+  border: rem(1px) solid $blue-grey-100;
+  border-radius: rem(3px);
+  box-shadow: none;
+  box-sizing: inherit;
+  font-family: inherit;
+  height: rem(36px);
+  padding: rem(8px);
+  width: 100%;
+
+  @include transition(background-color, border-color, box-shadow, color);
+
+  &:focus {
+    border-color: $indigo-a100;
+    outline: 0;
+
+    @include shadow-inner-border(rem(1px), $indigo-a100);
+  }
+
+  &:disabled {
+    background-color: $blue-grey-50;
+    color: $blue-grey-200;
+    cursor: not-allowed;
+  }
+}
+
+select:not([multiple]) {
+  background-image: url('data:image/svg+xml;utf8,<svg width="8px" height="18px" viewBox="0 0 8 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon stroke="none" fill="#000" fill-rule="evenodd" points="0 7 4 0 8 7"></polygon><polygon stroke="none" fill="#000" fill-rule="evenodd" points="0 11 4 18 8 11"></polygon></svg>');
+  background-repeat: no-repeat;
+  background-position: right rem(8px) center;
+}
+
+select[multiple],
+textarea {
+  height: auto;
+}
+
+input[type=color] {
+  background-color: $white;
+  border: rem(1px) solid $blue-grey-100;
+}

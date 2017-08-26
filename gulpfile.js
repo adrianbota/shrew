@@ -27,7 +27,7 @@ gulp.task('css', function () {
 
 gulp.task('html', function () {
   return gulp.src('src/index.html')
-    // .pipe(rename('index.html'))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest('dist'));
 });
 

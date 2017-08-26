@@ -1,0 +1,39 @@
+kbd, code, var, samp, pre, var {
+  font-family: $mono-font;
+  font-size: rem(14px);
+}
+
+kbd {
+  background-color: $blue-grey-100;
+  border-bottom: rem(2px) solid $blue-grey-200;
+  border-radius: rem(3px);
+  padding: 0 rem(5px);
+}
+
+code {
+  background-color: $blue-grey-50;
+  border: rem(1px) solid $blue-grey-200;
+  border-radius: rem(3px);
+  padding: 0 rem(3px);
+  word-wrap: break-word;
+}
+
+mark {
+  background-color: $yellow-700;
+  padding: rem(1px) rem(4px);
+}
+
+var {
+  font-style: normal;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  border-bottom-color: inherit;
+  cursor: help;
+  text-decoration: none;
+}
+
+small {
+  font-size: rem(12px);
+}

@@ -1,0 +1,16 @@
+blockquote {
+  position: relative;
+  margin: 0 0 rem($default-spacing);
+  padding: 0 0 0 rem(32px);
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: rem(14px);
+    top: 0;
+    bottom: 0;
+    width: rem(4px);
+    background-color: $blue-grey-100;
+    border-radius: rem(2px);
+  }
+}

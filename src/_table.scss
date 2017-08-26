@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  margin: 0 0 rem($default-spacing);
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  border-bottom: rem(1px) solid $blue-grey-100;
+}
+
+caption, th, td {
+  padding: rem(10px);
+}
+
+th {
+  font-size: rem(14px);
+}

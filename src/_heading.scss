@@ -1,0 +1,29 @@
+h1 {
+  font-size: rem(32px);
+  margin: 0 0 rem($default-spacing);
+}
+
+h2 {
+  font-size: rem(24px);
+  margin: 0 0 rem($default-spacing * 0.75);
+}
+
+h3 {
+  font-size: rem(22px);
+  margin: 0 0 rem($default-spacing * 0.75);
+}
+
+h4 {
+  font-size: rem(20px);
+  margin: 0 0 rem($default-spacing * 0.625);
+}
+
+h5 {
+  font-size: rem(18px);
+  margin: 0 0 rem($default-spacing * 0.625);
+}
+
+h6 {
+  font-size: rem(16px);
+  margin: 0 0 rem($default-spacing * 0.5);
+}

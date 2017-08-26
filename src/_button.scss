@@ -15,8 +15,10 @@ input[type=reset] {
   padding: 0 rem(16px);
   text-align: center;
   text-decoration: none;
+  user-select: none;
   white-space: nowrap;
 
+  @include no-tap-highlight();
   @include transition(background-color, box-shadow, color, transform);
   @include smooth-font();
 

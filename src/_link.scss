@@ -4,6 +4,7 @@ a {
   outline-offset: rem(1px);
   text-decoration: underline;
 
+  @include no-tap-highlight();
   @include transition(outline, color);
 
   &:focus:not(:active) {
